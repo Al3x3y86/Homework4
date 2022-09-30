@@ -2,11 +2,10 @@ public class Main {
     public static void main(String[] args) {
         // Задание 1
         System.out.println("Задание 1");
-        int yearsOld = 20;
+        int yearsOld = 23;
         if (yearsOld >= 18) {
             System.out.println("Поздравляем вас с совершеннолетием!");
-        }
-        if (yearsOld < 18) {
+        } else {
             System.out.println("Возраст совершеннолетия еще не наступил, нужно немного подождать!");
         }
 
@@ -14,11 +13,9 @@ public class Main {
         System.out.println("Задание 2");
         if (yearsOld >= 7 && yearsOld < 18) {
             System.out.println("Ребенок ходит в школу");
-        }
-        if (yearsOld >= 18 && yearsOld < 24) {
+        } else if (yearsOld >= 18 && yearsOld < 24) {
             System.out.println("Человек уже закончил школу и может отправляться в университет");
-        }
-        if (yearsOld >= 24) {
+        } else if (yearsOld >= 24) {
             System.out.println("Человек окончил университет и ходит на работу");
         }
 
@@ -28,18 +25,16 @@ public class Main {
         int seatsCount = 60;
         int standingCount = capacity - seatsCount;
 
-        int seatsUsed = 20;
-        int standingUsed = 20;
+        int seatsUsed = 60;
+        int standingUsed = 42;
         if (seatsUsed < seatsCount) {
             System.out.println(" Свободных сидячих мест " +(seatsCount - seatsUsed) );
-        }
-        if (seatsUsed == seatsCount) {
+        } else {
             System.out.println(" Сидячих мест нет ");
         }
         if (standingUsed < standingCount) {
             System.out.println(" Свободных стоячих мест " +(standingCount - standingUsed) );
-        }
-        if (standingUsed == standingCount) {
+        } else {
             System.out.println(" Стоячих мест нет ");
         }
     }
